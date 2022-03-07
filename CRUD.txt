@@ -1,0 +1,27 @@
+CREATE:
+mutation{
+	createProduct(data: {title: "", price:""})
+}
+
+DELETE:
+mutation{
+	deleteProduct(data: {id: ""})
+}
+
+GET ALL:
+{
+  getAllProducts {
+    id
+    title
+    price
+  }
+}
+
+UPDATE:
+mutation{
+  updateProduct(id: "", data:{title: "", price: ""}) {
+    title
+    price
+    id
+  }
+}
